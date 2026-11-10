@@ -459,6 +459,15 @@ const Contact = () => {
                     {status === 'success' && (
                         <p className="status-message success">Message sent successfully!</p>
                     )}
+                    {status === 'success' && (
+    <p className="status-message success">Message sent successfully!</p>
+)}
+
+                    {status === 'error' && (
+                        <p className="status-message error">
+                            {errorMsg || 'Something went wrong. Please try again.'}
+                        </p>
+                    )}
                     
                 </form>
             </div>
